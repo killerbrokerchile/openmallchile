@@ -46,13 +46,9 @@
 
 <script  src="js/swiper-openmall.js"></script>
 
-
 	<link href="src/rateit.css" rel="stylesheet" type="text/css">
- 
-    
     <script src="src/jquery.rateit.js" type="text/javascript"></script>
-
-
+    
   
     <style type="text/css"> 
 .styled-button-1 {
@@ -81,21 +77,54 @@
        
         
         $(document).ready(function(){
-            $("#verMas001").click(function(){
-                window.open("http://localhost:8080/openmallchile/td000.html", "_self");
-            });
+             $("#descarga").click(function(){
+                window.open("OpenMallChile.apk");
+            }); 
+            
+            
             $("#verMas002").click(function(){
-                window.open("http://localhost:8080/openmallchile/td001.html", "_self");
+                window.open("http://www.openmallchile.com/td001.html", "_self");
             });
         });
     </script>
   
-
+<!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+ -->
+ 
+ <style type="text/css">
+ .ui-icon-phone-touch,
+.ui-icon-email {
+	background-image: url(images/facebook.png);
+	background-repeat: no-repeat;
+}
+.ui-icon-phone-touch {
+	background-position: 0 50%;
+}
+.ui-icon-email {
+	background-position: -36px 50%;
+}
+ 
+ </style>
+ 
 </head>
 
 
 
 <body>
+
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=571586082922073";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <!-- div role="main" class="main"> -->
 	
@@ -122,10 +151,35 @@
     </div>
 
 
-<p>Publica Tu aviso con nosotros Atención 24 horas, solo Tiendas. Sector Ciudad de los Valles, Lo Aguirre, El Noviciado, y comuna de Maipú. 
-Miles de usuarios realizando pedidos. Para Publicar solo debes llamar al Fono: <b>6 0 1 3 0 2 5</b> o enviarnos tu solicitud <b>alejandro.sandoval@openti.cl</b></p>
+<p>Publica Tu aviso con nosotros <b>Atención 24 horas</b>, solo Tiendas. Sector Ciudad de los Valles, Lo Aguirre, El Noviciado, y comuna de Maipú. 
+Miles de usuarios realizando pedidos. Para Publicar solo debes llamar al Fono: <b>2 6 0 1 3 0 2 5</b> o enviarnos tu solicitud <b>alejandro.sandoval@openti.cl</b></p>
 
-<button id="verMas001" class="styled-button-1" >Ver Más</button>
+  <a id="verMas001"  class="styled-button-1" data-role="button" data-inline="true">Ver Más</a>
+  <a  id="descarga" class="styled-button-1" data-role="button" data-inline="true" data-theme="b">Descargar</a>
+  <a class="styled-button-1" href="tel:+56957756050" data-role="button" data-inline="true"  data-theme="b">Atención Ventas</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="swiper-slide">
+
+<div class="m-content"> <img src="img/m/pato.gif">
+
+<div class="m-right">
+
+<h3>Coméntanos en Facebook</h3>
+
+	<div class="fb-comments" data-href="http://www.facebook.com/open.mall.12/comments" 
+	data-width="300" data-numposts="1" data-colorscheme="light"></div>
+
+ <div  class="rateit" data-rateit-value="4.5" data-rateit-ispreset="true" data-rateit-readonly="true">
+
+    </div> 
+    
+   
 
 </div>
 
@@ -133,9 +187,6 @@ Miles de usuarios realizando pedidos. Para Publicar solo debes llamar al Fono: <
 
 </div>
 
- <div class="rateit">
-
-    </div>
 
 <div class="swiper-slide">
 
@@ -151,7 +202,10 @@ Miles de usuarios realizando pedidos. Para Publicar solo debes llamar al Fono: <
     
    <p>Ven a disfrutar de un buen momento con nuestros productos de pastelería, cafetería, pizzería y ricos helados artesanales en un grato ambiente y a un buen precio.</p>
 
-	<button id="verMas002" class="styled-button-1" >Ver Más</button>
+  <a id="verMas002" class="styled-button-1" data-role="button" data-inline="true" data-theme="b">Ver Más Información</a>
+  <a class="styled-button-1" href="tel:+56977924193" data-role="button" data-inline="true" data-icon="phone-touch" data-iconpos="right" >Atención </a>
+
+
 
 
 </div>
@@ -162,16 +216,13 @@ Miles de usuarios realizando pedidos. Para Publicar solo debes llamar al Fono: <
 
 <div class="swiper-slide">
 
-<div class="m-content"> <img src="img/m/3.jpg">
+<div class="m-content"> <img src="img/m/cuti.gif" width="150px">
 
 <div class="m-right">
 
-<h3>Disponible</h3>
+<h3>Las 24 Horas del Día</h3>
 
-<input name="star1" type="radio" class="star" />
-
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lacinia vulputate hendrerit. Suspendisse potenti. Etiam rutrum egestas massa, ut facilisis magna tristique nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+<p>Servicios las 24 horas del Dia, y en cualquier lugar. En OpenMall Chile apuntamos a la alta disponibilidad y, calidad en el servicio.</p>
 
 </div>
 
@@ -181,27 +232,57 @@ Miles de usuarios realizando pedidos. Para Publicar solo debes llamar al Fono: <
 
 <div class="swiper-slide">
 
-<div class="m-content"> <img src="img/m/4.jpg">
+<div class="m-content"> <img src="img/m/2.png">
 
 <div class="m-right">
 
-<h3>Disponible</h3>
+<h3>Valle Video</h3>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lacinia vulputate hendrerit. Suspendisse potenti. Etiam rutrum egestas massa, ut facilisis magna tristique nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+<p>Arriendo de las mejores películas. Más de 4000 películas en DVD, Blu,-ray, Blu-ray 3D para disfrutar en familia y con los mejores estrenos de cines.</p>
+
+<a class="styled-button-1" href="tel:+560226014245">Atención Ventas</a>
+
+</div>
 
 </div>
 
 </div>
 
-</div>
 
 <div class="swiper-slide">
 
-<div class="m-content"> <img src="img/m/5.jpg">
+<div class="m-content"> <img src="img/m/pato.gif">
 
 <div class="m-right">
 
-<h3>Disponible</h3>
+<h3>Estamos en Facebook</h3>
+
+	<div class="fb-comments" data-href="http://www.facebook.com/open.mall.12/comments" 
+	data-width="300" data-numposts="1" data-colorscheme="light"></div>
+
+ <div  class="rateit" data-rateit-value="4.5" data-rateit-ispreset="true" data-rateit-readonly="true">
+
+    </div> 
+    
+   <p>No olvides que en OpenMall Chile nos puedes encontrar en facebook.</p>
+
+	<!-- <button id="verMas002" class="styled-button-1" >Ver Más Información</button>
+ -->
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="swiper-slide">
+
+<div class="m-content"> <img src="img/m/3.png">
+
+<div class="m-right">
+
+<h3>Avisos Clasificados</h3>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lacinia vulputate hendrerit. Suspendisse potenti. Etiam rutrum egestas massa, ut facilisis magna tristique nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
 
@@ -219,7 +300,10 @@ Miles de usuarios realizando pedidos. Para Publicar solo debes llamar al Fono: <
 
 <h3>Disponible</h3>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lacinia vulputate hendrerit. Suspendisse potenti. Etiam rutrum egestas massa, ut facilisis magna tristique nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+<p>Avisos Destacados, Avisos Clasificados, funciona las 24 horas del día sin interrupción, abarcamos los medios como redes sociales y nos encargamos de que tu necesidad sea acogida.</p>
+
+  <a class="styled-button-1" href="tel:+56957756050" data-role="button" data-inline="true"  data-theme="b">Atención Ventas</a>
+
 
 </div>
 
@@ -401,17 +485,16 @@ Miles de usuarios realizando pedidos. Para Publicar solo debes llamar al Fono: <
 
 <div class="swiper-slide" style="width:1050px"> 
 	
-	<img class="active" src="img/m/0.png"> 
-	<img src="img/m/1.png"> 
-	<img src="img/m/3.jpg"> 
-	<img src="img/m/4.jpg"> 
-	<img src="img/m/5.jpg"> 
+	<img class="active" src="img/m/0.png"> <!-- openmall -->
+	<img src="img/m/pato.gif"> 
+	<img src="img/m/1.png">  <!-- il 'piacere -->
+	<img src="img/m/cuti.gif">
+	<img src="img/m/2.png">  <!-- valle video -->
+	<img src="img/m/pato.gif">
+	<img src="img/m/3.png">  <!--  Avisos Clasificados -->
 	<img src="img/m/6.jpg"> 
 	<img src="img/m/7.jpg"> 
 	<img src="img/m/8.jpg"> 
-	<img src="img/m/1.jpg"> 
-	<img src="img/m/2.jpg"> 
-	<img src="img/m/3.jpg"> 
 	<img src="img/m/4.jpg"> 
 	<img src="img/m/5.jpg"> 
 	<img src="img/m/6.jpg"> 
@@ -433,6 +516,8 @@ Miles de usuarios realizando pedidos. Para Publicar solo debes llamar al Fono: <
 
 
 <!-- /div-->
+
+
 
 
 
