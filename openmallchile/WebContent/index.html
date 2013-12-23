@@ -53,20 +53,41 @@
     <script src="src/jquery.rateit.js" type="text/javascript"></script>
 
 
-<script>
-  $(function() {
-    $( "input[type=submit], a, button" )
-      .button()
-      .click(function( event ) {
-    	  
-        event.preventDefault();
+
+
+<script type="text/javascript">
+        /**
+        Variable que contiene la informacion de un boton el cual tiene su id,
+        estilos, y su evento click que te redirige a La Web del Programador
+        */
+        var lwpButton = $("<img>", {
+            id: "lwpButton",
+            css: { "padding": "2px", "cursor": "pointer" },
+            title: "ir a La Web del Programador",
+            alt: "La Web del Programador",
+            src: "http://www.lawebdelprogramador.com/logolwp100x25.jpg",
+            click: function (e) { 
+            	window.open("http://localhost:8080/");
+                //document.location = "http://www.lawebdelprogramador.com";
+            }
+        });
         
-        window.open('http://www.theuntappedsource.com/results.php?category=422');
-        
-        alert("aaa");
-      });
-  });
-  </script>
+        $(document).ready(function(){
+            /* Si se pulsa sobre el div "button" */
+            $("#button001").click(function(){
+                /*
+                Añadimos en la web la variable "lwpButton" que es una imagen
+                con un link
+                */
+                //$("body").append(lwpButton);
+                window.open("http://localhost:8080/openmallchile/td001.html", "_self");
+            });
+        });
+    </script>
+    
+    <style>
+        #button {width:300px;text-align:center;border:1px solid #808080;padding:5px;}
+    </style>
 
 
 
@@ -128,7 +149,7 @@ Miles de usuarios realizando pedidos. Para Publicar solo debes llamar al Fono: <
 
     </div>
     
-    <div id='button'>Pulsa aqui para añadir una imagen que enlaza con La Web del Programador</div>
+    <div id='button001'>Pulse aquí para ver los productos</div>
 
 <p>Ven a disfrutar de un buen momento con nuestros productos de pastelería, cafetería, pizzería y ricos helados artesanales en un grato ambiente y a un buen precio.</p>
 
