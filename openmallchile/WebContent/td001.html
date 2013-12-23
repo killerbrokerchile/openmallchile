@@ -46,6 +46,36 @@
 
 <script  src="js/swiper-demos.js"></script>
 
+
+    <script>
+        
+        function openWindow(){
+        	window.open("http://localhost:8080/openmallchile/index.html","_self");
+        }
+
+    </script>
+    
+    <style type="text/css"> 
+.styled-button-1 {
+	-webkit-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	-moz-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	color:#333;
+	background-color:#FA2;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:none;
+	font-family:'Helvetica Neue',Arial,sans-serif;
+	font-size:16px;
+	font-weight:700;
+	height:32px;
+	padding:4px 16px;
+	text-shadow:#FE6 0 1px 0
+}
+</style>
+
+
 </head>
 
 
@@ -61,35 +91,105 @@
 
 <div class="swiper-wrapper">
 
-<div class="swiper-slide"> <img src="./img/slider1-1.png"> </div>
+<div class="swiper-slide">
 
-<div class="swiper-slide"> <img src="./img/slider1-2.png"> </div>
+	<div class="content-slide">
+	
+	<h2 style="margin-top: 0;">Pizzas</h2>
+	
+	<p>Promociones 2x1</p>
+	
+	<button id="nameButton" class="styled-button-1" onclick="openWindow()">Volver al Menu principal</button>
+	
+	</div>
+
+	<div class="content-slide cs-1">
+	
+	  <img src="img/tienda/td001/td001_01.png">
+	
+	</div>
+
+	<div class="content-slide cs-2">
+	
+	<p style="margin: 0;">Pizza Napolitana desde $4.900 (Mediana).</p>
+	
+	</div>
+
+	<div class="clearfix"></div>
+
+</div>
+
+<!-- Secciones -->
+
 
 <div class="swiper-slide">
 
-<div class="content-slide">
+	<div class="content-slide">
+	
+	<h2 style="margin-top: 0;">Caffé</h2>
+	
+	<p>10% Descuento</p>
+	
+	<button id="nameButton" class="styled-button-1" onclick="openWindow()">Volver al Menu principal</button>
+	
+	
+	</div>
 
-<h2 style="margin-top: 0;">Slide with HTML</h2>
+ 	
+	<div class="content-slide cs-1">
+	
+	  <img src="img/tienda/td001/td001_02.png">
+	
+	</div>
 
-<p>You can put any HTML inside of slide with any layout, not only images, even another Swiper!</p>
+	<div class="content-slide cs-2">
+	
+	<p style="margin: 0;">Capuccino, Vainilla, Latte, Mokaccino o Expresso acompañado de 2 trozos de pastel a elección y 2 copas de helado San Francisco por solo $ 5990.</p>
+	
+		
+	</div>
+
+	<div class="clearfix"></div>
 
 </div>
 
-<div class="content-slide cs-1">
 
-<p style="margin: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur tortor vitae neque luctus a tempor lacus pretium. Mauris eget ligula at justo molestie cursus. In vitae sem id neque pharetra luctus non vel felis.</p>
+<!-- Secciones -->
+
+
+<div class="swiper-slide">
+
+	<div class="content-slide">
+	
+	<h2 style="margin-top: 0;">Pasteles</h2>
+	
+	<p>10% Descuento</p>
+	
+	<button id="nameButton" class="styled-button-1" onclick="openWindow()">Volver al Menu principal</button>
+	
+	
+	</div>
+
+ 	
+	<div class="content-slide cs-1">
+	
+	  <img src="img/tienda/td001/td001_03.png">
+	
+	</div>
+
+	<div class="content-slide cs-2">
+	
+	<p style="margin: 0;">Pasteles San Francisco todos los Sabores, El mismo postre helado para disfrutar solito.</p>
+	
+		
+	</div>
+
+	<div class="clearfix"></div>
 
 </div>
 
-<div class="content-slide cs-2">
 
-<p style="margin: 0;">Aliquam ut laoreet ligula. Quisque vehicula lectus nec orci viverra porttitor. Donec sodales lectus sit amet nunc congue ut mattis augue rhoncus.</p>
 
-</div>
-
-<div class="clearfix"></div>
-
-</div>
 
 </div>
 
